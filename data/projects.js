@@ -1,6 +1,6 @@
 /**
  * Sadia Khan - Portfolio Projects Data
- * 25 Imported Production Projects
+ * 20 Imported Production Projects
  */
 var PORTFOLIO_PROJECTS = window.PORTFOLIO_PROJECTS = [
   {
@@ -113,10 +113,10 @@ var PORTFOLIO_PROJECTS = window.PORTFOLIO_PROJECTS = [
   {
     "slug": "pediatric-calculator",
     "title": "Pediatric Calculator",
-    "categoryKey": "tools-os",
+    "categoryKey": "ai-health",
     "category": {
-      "en": "Tools & Web Apps",
-      "de": "Tools & Web-Apps"
+      "en": "AI & HealthTech",
+      "de": "KI & MedTech"
     },
     "role": {
       "en": "Full Stack Developer",
@@ -1052,263 +1052,10 @@ var PORTFOLIO_PROJECTS = window.PORTFOLIO_PROJECTS = [
     "links": {
       "Android": "https://play.google.com/store/apps/details?id=dev.usama.kidsreels"
     }
-  },
-  {
-    "slug": "assignmento",
-    "title": "Assignmento",
-    "categoryKey": "tools-os",
-    "category": {
-      "en": "Tools & Web Apps",
-      "de": "Tools & Web-Apps"
-    },
-    "role": {
-      "en": "Full Stack Developer",
-      "de": "Full-Stack-Entwicklerin"
-    },
-    "timeline": "2023 - Present",
-    "logo": "assets/logos/projects/assignmento.png",
-    "tags": [
-      "React",
-      "Tailwind",
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "tagline": {
-      "en": "Realistic Text-to-Handwriting Conversion & Document Generator",
-      "de": "Realistische Text-zu-Handschrift-Konvertierung und automatischer Dokumentengenerator."
-    },
-    "description": {
-      "en": "Free online text-to-handwriting converter that transforms digital text into realistic handwritten documents and PDFs.",
-      "de": "Realistische Text-zu-Handschrift-Konvertierung und automatischer Dokumentengenerator."
-    },
-    "problem": {
-      "heading": {
-        "en": "Repetitive Handwriting Demands in Academic Assignments",
-        "de": "Herausforderung & Zielsetzung"
-      },
-      "summary": {
-        "en": "Students and educators frequently encounter situations requiring handwritten submission formats, note summaries, or customized calligraphy assignments. Manually writing out dozens of pages by hand is physically taxing and inefficient.",
-        "de": "Students and educators frequently encounter situations requiring handwritten submission formats, note summaries, or customized calligraphy assignments. Manually writing out dozens of pages by hand is physically taxing and inefficient."
-      }
-    },
-    "solution": {
-      "heading": {
-        "en": "Browser Canvas Realistic Handwriting Simulation Engine",
-        "de": "Technische Lösung & Umsetzung"
-      },
-      "summary": {
-        "en": "Developed Assignmento as a high-fidelity client-side web application. It introduces natural letter-spacing variations, ink bleed physics, customizable ruled/blank paper canvases, and instant multi-page PDF export.",
-        "de": "Developed Assignmento as a high-fidelity client-side web application. It introduces natural letter-spacing variations, ink bleed physics, customizable ruled/blank paper canvases, and instant multi-page PDF export."
-      }
-    },
-    "links": {
-      "Web": "https://assignmento.usama.dev"
-    }
-  },
-  {
-    "slug": "dart-tutorials",
-    "title": "Dart Tutorials",
-    "categoryKey": "tools-os",
-    "category": {
-      "en": "Tools & Open Source",
-      "de": "Tools & Open Source"
-    },
-    "role": {
-      "en": "Full Stack Technical Writer & Lead",
-      "de": "Full-Stack-Autorin & Technische Leitung"
-    },
-    "timeline": "2019 - Present",
-    "logo": "assets/logos/tech/dart.svg",
-    "tags": [
-      "Dart",
-      "Flutter",
-      "Medium"
-    ],
-    "tagline": {
-      "en": "Technical Publication & Deep-Dive Educational Resource for Dart & Flutter",
-      "de": "Technische Publikation und Deep-Dive-Lernplattform für moderne App-Entwicklung."
-    },
-    "description": {
-      "en": "Popular publication sharing technical guides and best practices for Dart and Flutter.",
-      "de": "Technische Publikation und Deep-Dive-Lernplattform für moderne App-Entwicklung."
-    },
-    "problem": {
-      "heading": {
-        "en": "Lack of Advanced, Production-Focused Dart Engineering Guides",
-        "de": "Herausforderung & Zielsetzung"
-      },
-      "summary": {
-        "en": "When Flutter and Dart surged in popularity, most available tutorials covered only basic beginner syntax. Developers lacked deep-dive architectural literature on memory optimization, asynchronous stream pipelines, isolate concurrency, and clean enterprise design patterns.",
-        "de": "When Flutter and Dart surged in popularity, most available tutorials covered only basic beginner syntax. Developers lacked deep-dive architectural literature on memory optimization, asynchronous stream pipelines, isolate concurrency, and clean enterprise design patterns."
-      }
-    },
-    "solution": {
-      "heading": {
-        "en": "High-Quality, Deeply Researched Technical Publication",
-        "de": "Technische Lösung & Umsetzung"
-      },
-      "summary": {
-        "en": "Founded the 'Dart Tutorials' publication on Medium to deliver rigorous, code-first engineering tutorials, architectural blueprints, and performance deep dives for the international developer community.",
-        "de": "Founded the 'Dart Tutorials' publication on Medium to deliver rigorous, code-first engineering tutorials, architectural blueprints, and performance deep dives for the international developer community."
-      }
-    },
-    "links": {
-      "Web": "https://medium.com/dart-tutorials"
-    }
-  },
-  {
-    "slug": "telegram",
-    "title": "Telegram",
-    "categoryKey": "tools-os",
-    "category": {
-      "en": "Tools & Open Source",
-      "de": "Tools & Open Source"
-    },
-    "role": {
-      "en": "Full Stack SDK Engineer",
-      "de": "Full-Stack-SDK-Entwicklerin"
-    },
-    "timeline": "2020 - Present",
-    "logo": "assets/logos/projects/telegram.svg",
-    "tags": [
-      "Dart",
-      "Open Source"
-    ],
-    "tagline": {
-      "en": "High-Performance Dart/Flutter Telegram Bot & Client API SDK on Pub.dev",
-      "de": "Hochleistungsfähiges Telegram-Bot- und Client-SDK für serverseitige und App-Integrationen."
-    },
-    "description": {
-      "en": "Flutter Telegram API package hosted on Pub.dev for seamless messaging integration.",
-      "de": "Hochleistungsfähiges Telegram-Bot- und Client-SDK für serverseitige und App-Integrationen."
-    },
-    "problem": {
-      "heading": {
-        "en": "Complex Telegram Bot & TDLib Integrations in Dart Ecosystem",
-        "de": "Herausforderung & Zielsetzung"
-      },
-      "summary": {
-        "en": "Integrating Telegram automation, interactive bots, and messaging channels into Dart and Flutter applications was hindered by outdated, incomplete wrapper packages that lacked full Bot API schema coverage and strong type safety.",
-        "de": "Integrating Telegram automation, interactive bots, and messaging channels into Dart and Flutter applications was hindered by outdated, incomplete wrapper packages that lacked full Bot API schema coverage and strong type safety."
-      }
-    },
-    "solution": {
-      "heading": {
-        "en": "Type-Safe, Async-First Telegram Client SDK for Dart",
-        "de": "Technische Lösung & Umsetzung"
-      },
-      "summary": {
-        "en": "Engineered and open-sourced the `telegram` package on pub.dev, providing full coverage of Telegram's Bot API with strong typing, robust error handling, webhook dispatchers, and rich media stream handlers.",
-        "de": "Engineered and open-sourced the `telegram` package on pub.dev, providing full coverage of Telegram's Bot API with strong typing, robust error handling, webhook dispatchers, and rich media stream handlers."
-      }
-    },
-    "links": {
-      "Web": "https://pub.dev/packages/telegram"
-    }
-  },
-  {
-    "slug": "cmd",
-    "title": "cmd",
-    "categoryKey": "tools-os",
-    "category": {
-      "en": "Tools & Open Source",
-      "de": "Tools & Open Source"
-    },
-    "role": {
-      "en": "Full Stack Systems Developer",
-      "de": "Full-Stack-Systementwicklerin"
-    },
-    "timeline": "2019 - Present",
-    "logo": "assets/logos/projects/cmd.svg",
-    "tags": [
-      "Dart",
-      "3K+ Users"
-    ],
-    "tagline": {
-      "en": "Cross-Platform Command Execution & Process Orchestration for Dart",
-      "de": "Plattformübergreifende Befehlsausführung und Prozess-Orchestrierungsbibliothek."
-    },
-    "description": {
-      "en": "Lead developer of a widely used Dart package for executing terminal commands.",
-      "de": "Plattformübergreifende Befehlsausführung und Prozess-Orchestrierungsbibliothek."
-    },
-    "problem": {
-      "heading": {
-        "en": "Inconsistent Process Spawning Across Operating Systems in Dart",
-        "de": "Herausforderung & Zielsetzung"
-      },
-      "summary": {
-        "en": "Spawning and managing shell commands, piping stdout/stderr streams, and handling environment variables consistently across Windows, macOS, and Linux in Dart required verbose boilerplate and was prone to zombie process leaks.",
-        "de": "Spawning and managing shell commands, piping stdout/stderr streams, and handling environment variables consistently across Windows, macOS, and Linux in Dart required verbose boilerplate and was prone to zombie process leaks."
-      }
-    },
-    "solution": {
-      "heading": {
-        "en": "A Clean, Expressive Process Execution Library for Dart",
-        "de": "Technische Lösung & Umsetzung"
-      },
-      "summary": {
-        "en": "Created `cmd`, an intuitive, robust Dart package that makes running shell commands, capturing outputs, and piping process streams as simple as a single line of expressive code.",
-        "de": "Created `cmd`, an intuitive, robust Dart package that makes running shell commands, capturing outputs, and piping process streams as simple as a single line of expressive code."
-      }
-    },
-    "links": {
-      "Web": "https://pub.dev/packages/cmd"
-    }
-  },
-  {
-    "slug": "csv",
-    "title": "csv",
-    "categoryKey": "tools-os",
-    "category": {
-      "en": "Tools & Open Source",
-      "de": "Tools & Open Source"
-    },
-    "role": {
-      "en": "Full Stack Systems Developer",
-      "de": "Full-Stack-Systementwicklerin"
-    },
-    "timeline": "2019 - Present",
-    "logo": "assets/logos/projects/csv.svg",
-    "tags": [
-      "Dart",
-      "1K+ Users"
-    ],
-    "tagline": {
-      "en": "High-Efficiency Streaming CSV Parser & Serializer for Dart Ecosystem",
-      "de": "Hocheffizienter Streaming-CSV-Parser und Serializer für datenintensive Workflows."
-    },
-    "description": {
-      "en": "Maintainer of the robust CSV parsing and generation package for the Dart ecosystem.",
-      "de": "Hocheffizienter Streaming-CSV-Parser und Serializer für datenintensive Workflows."
-    },
-    "problem": {
-      "heading": {
-        "en": "Memory Exhaustion in Large-Scale CSV File Processing",
-        "de": "Herausforderung & Zielsetzung"
-      },
-      "summary": {
-        "en": "Processing gigabyte-scale CSV exports in Dart traditionally required reading entire strings into memory, causing out-of-memory crashes on mobile devices and backend servers when parsing large datasets.",
-        "de": "Processing gigabyte-scale CSV exports in Dart traditionally required reading entire strings into memory, causing out-of-memory crashes on mobile devices and backend servers when parsing large datasets."
-      }
-    },
-    "solution": {
-      "heading": {
-        "en": "Streaming Chunked CSV Transformer Engine",
-        "de": "Technische Lösung & Umsetzung"
-      },
-      "summary": {
-        "en": "Maintained and optimized the `csv` Dart package, introducing streaming `StreamTransformer` architectures that parse and emit CSV rows on the fly with minimal constant memory footprint.",
-        "de": "Maintained and optimized the `csv` Dart package, introducing streaming `StreamTransformer` architectures that parse and emit CSV rows on the fly with minimal constant memory footprint."
-      }
-    },
-    "links": {
-      "Web": "https://pub.dev/packages/csv"
-    }
   }
 ];
 
 if (typeof module !== "undefined") {
   module.exports = PORTFOLIO_PROJECTS;
 }
+

@@ -149,7 +149,7 @@
           <div class="row g-3">
             <div class="col-6">
               <div class="stat-card text-center">
-                <div class="stat-card-value text-dark" data-i18n="stat_projects_num">25+</div>
+                <div class="stat-card-value text-dark" data-i18n="stat_projects_num">20+</div>
                 <div class="stat-card-label" data-i18n="stat_projects_label">Produktiv-Projekte</div>
               </div>
             </div>
@@ -198,12 +198,12 @@
         <!-- Left: Refined Developer Card -->
         <div class="col-12 col-lg-5">
           <div class="about-profile-card">
-            <!-- Header with matched monogram -->
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="logo-monogram" style="width: 52px; height: 52px; font-size: 1.25rem;">SK</div>
-              <div>
-                <h5 class="fw-bold text-dark mb-0.5">Sadia Khan</h5>
-                <span class="text-danger small fw-semibold" data-i18n="hero_role">Full Stack Developer</span>
+            <!-- Header with matched monogram and clean breathing room -->
+            <div class="about-card-header">
+              <div class="logo-monogram" style="width: 50px; height: 50px; font-size: 1.2rem;">SK</div>
+              <div class="d-flex flex-column justify-content-center">
+                <h5 class="fw-bold text-dark mb-0 lh-sm">Sadia Khan</h5>
+                <span class="text-danger small fw-semibold" style="margin-top: 1px;" data-i18n="hero_role">Full Stack Developer</span>
               </div>
             </div>
 
@@ -241,12 +241,34 @@
                 <a href="tel:+4915756856048" class="text-dark text-decoration-none fw-semibold ms-2">+49 1575 6856048</a>
               </div>
 
+              <!-- Degree Name Record -->
               <div class="about-info-row">
                 <span class="text-secondary d-inline-flex align-items-center gap-2">
                   <i data-lucide="graduation-cap" class="text-muted lucide-sm"></i>
                   <span data-i18n="about_degree_label">Abschluss:</span>
                 </span>
-                <strong class="text-dark text-end ms-2" data-i18n="about_degree_val">Graduiert (Informatik · FAST NUCES)</strong>
+                <strong class="text-dark text-end ms-2" data-i18n="about_degree_val">Graduiert (Informatik)</strong>
+              </div>
+
+              <!-- University / Institute Record -->
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="building-2" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_edu_inst_label">Universität:</span>
+                </span>
+                <strong class="text-dark text-end ms-2" data-i18n="about_edu_inst_val">FAST NUCES</strong>
+              </div>
+
+              <!-- Languages Competency Record -->
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="languages" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_lang_label">Sprachen:</span>
+                </span>
+                <div class="d-inline-flex align-items-center gap-2 ms-2 flex-wrap justify-content-end">
+                  <span class="about-lang-chip"><span>🇩🇪</span> Deutsch</span>
+                  <span class="about-lang-chip"><span>🇬🇧</span> English</span>
+                </div>
               </div>
             </div>
           </div>
@@ -254,13 +276,13 @@
 
         <!-- Right: Bio & 4 Pillar Cards -->
         <div class="col-12 col-lg-7">
-          <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2.5" data-i18n="about_eyebrow">Profil & Philosophie</span>
+          <span class="badge bg-danger-subtle text-danger fw-semibold px-3.5 py-2 rounded-pill mb-3 d-inline-block" data-i18n="about_eyebrow">Profil & Philosophie</span>
           <h2 class="h2 fw-bold text-dark mb-3" data-i18n="about_heading">Leidenschaftliche Full-Stack-Ingenieurin mit Blick fürs Ganze</h2>
           <p class="text-secondary mb-3" style="line-height: 1.7;" data-i18n="about_p1">
-            Ich bin eine detailorientierte Full-Stack-Entwicklerin mit fundierter Praxiserfahrung in moderner Frontend- und Backend-Entwicklung. Mein Schwerpunkt liegt auf der Entwicklung und Wartung skalierbarer Webanwendungen mit agilem Vorgehen und durchdachter Softwarearchitektur.
+            Ich bin eine detailorientierte Full-Stack-Entwicklerin mit fundierter Praxiserfahrung in moderner Frontend-, Mobile- und Backend-Entwicklung sowie intelligenter Automatisierung. Mein Schwerpunkt liegt auf der Entwicklung und Wartung skalierbarer Web- und App-Lösungen mit agilem Vorgehen und durchdachter Softwarearchitektur.
           </p>
           <p class="text-secondary mb-4" style="line-height: 1.7;" data-i18n="about_p2">
-            Ob moderne reaktive Interfaces mit React, Vue oder Angular, hochperformante Microservices mit Node.js, Express, Django oder Laravel, oder relationale und NoSQL-Datenbanken: Ich verbinde technische Exzellenz mit nutzerzentriertem Design und geschäftlichem Mehrwert.
+            Ob moderne Webanwendungen mit Next.js und React, performante Cross-Platform-Apps mit Flutter und Dart, Cloud-Backends mit Node.js und Supabase/Firebase oder effiziente Workflow-Automatisierungen mit n8n und GoHighLevel (GHL): Ich verbinde technische Exzellenz mit nutzerzentriertem Design und geschäftlichem Mehrwert.
           </p>
 
           <!-- 4 Pillars with generous gaps & Lucide checkmark circles -->
@@ -379,6 +401,8 @@
               </p>
             </div>
             <div class="d-flex flex-wrap gap-2 pt-1">
+              <span class="tech-tag">n8n</span>
+              <span class="tech-tag">GHL (GoHighLevel)</span>
               <span class="tech-tag">Python & FastAPI</span>
               <span class="tech-tag">Node.js</span>
               <span class="tech-tag">LLM & OpenAI APIs</span>
@@ -386,7 +410,6 @@
               <span class="tech-tag">SQL & Vector DBs</span>
               <span class="tech-tag">Firebase</span>
               <span class="tech-tag">Workflow Automation</span>
-              <span class="tech-tag">Data Pipelines</span>
               <span class="tech-tag">GitHub</span>
             </div>
           </div>
@@ -395,7 +418,7 @@
     </div>
   </section>
 
-  <!-- Projects Section (25 Projects Showcase) -->
+  <!-- Projects Section (20 Projects Showcase) -->
   <section id="projects" class="py-5 bg-light border-bottom">
     <div class="container py-lg-4">
       <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between mb-4">
@@ -403,9 +426,9 @@
           <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="projects_eyebrow">Portfolio & Fallstudien</span>
           <h2 class="display-6 fw-bold text-dark mb-2">
             <span data-i18n="projects_heading">Ausgewählte Produktiv-Projekte</span> 
-            <span id="projects-count" class="text-danger fs-4 fw-bold">(25)</span>
+            <span id="projects-count" class="text-danger fs-4 fw-bold">(20)</span>
           </h2>
-          <p class="text-secondary mb-lg-0" data-i18n="projects_sub">25 interaktive Architektur-Fallstudien und Anwendungen aus den Bereichen Enterprise, Healthcare, KI und Mobile.</p>
+          <p class="text-secondary mb-lg-0" data-i18n="projects_sub">20 interaktive Architektur-Fallstudien und Anwendungen aus den Bereichen Enterprise, Healthcare, KI und Mobile.</p>
         </div>
 
         <!-- Search Bar -->
@@ -417,11 +440,10 @@
 
       <!-- Category Filter Pills -->
       <div class="d-flex flex-wrap gap-2 mb-4 pb-2">
-        <button type="button" class="filter-btn active" data-category="all" data-i18n="filter_all">Alle (25)</button>
+        <button type="button" class="filter-btn active" data-category="all" data-i18n="filter_all">Alle (20)</button>
         <button type="button" class="filter-btn" data-category="enterprise" data-i18n="filter_enterprise">Unternehmen & SaaS</button>
         <button type="button" class="filter-btn" data-category="ai-health" data-i18n="filter_ai_health">KI & MedTech</button>
         <button type="button" class="filter-btn" data-category="mobile-media" data-i18n="filter_mobile_media">Medien & Mobile</button>
-        <button type="button" class="filter-btn" data-category="tools-os" data-i18n="filter_tools_os">Tools & Open Source</button>
       </div>
 
       <!-- Dynamic Projects Grid -->
