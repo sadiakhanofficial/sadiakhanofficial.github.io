@@ -36,7 +36,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-custom py-2.5">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2.5 text-decoration-none" href="#">
+      <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="#">
         <div class="logo-monogram">SK</div>
         <div class="d-flex flex-column justify-content-center">
           <span class="fw-bold fs-5 text-dark lh-1">Sadia Khan</span>
@@ -68,9 +68,6 @@
             <a class="nav-link" href="#projects" data-i18n="nav_projects">Projekte</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience" data-i18n="nav_experience">Werdegang</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#contact" data-i18n="nav_contact">Kontakt</a>
           </li>
         </ul>
@@ -96,7 +93,7 @@
       <div class="row align-items-center gy-5">
         <div class="col-12 col-lg-7">
           <!-- Availability & Location Badges -->
-          <div class="d-flex flex-wrap align-items-center gap-2 mb-3.5">
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-4 pb-1">
             <div class="hero-status-pill">
               <span class="status-indicator-dot"></span>
               <span data-i18n="hero_badge_status">Verfügbar für neue Herausforderungen</span>
@@ -109,7 +106,7 @@
 
           <!-- Main Headline -->
           <h1 class="display-4 fw-extrabold mb-3 lh-sm">
-            <span class="text-secondary fs-4 d-block fw-semibold mb-1" data-i18n="hero_greeting">Hallo, ich bin</span>
+            <span class="text-secondary fs-4 d-block fw-semibold mb-1.5" data-i18n="hero_greeting">Hallo, ich bin</span>
             <span class="text-dark fw-bold">Sadia Khan</span><br>
             <span class="text-danger" data-i18n="hero_role">Full Stack Developer</span>
           </h1>
@@ -131,7 +128,7 @@
           </div>
 
           <!-- Direct contact chips with clean icon circles and healthy spacing -->
-          <div class="d-flex flex-wrap align-items-center gap-2.5 pt-1">
+          <div class="d-flex flex-wrap align-items-center gap-3 pt-2">
             <a href="mailto:contact@sadiakhan.dev" class="contact-quick-chip">
               <span class="chip-icon-box">
                 <i data-lucide="mail" class="lucide-sm"></i>
@@ -152,33 +149,33 @@
           <div class="row g-3">
             <div class="col-6">
               <div class="stat-card text-center">
-                <div class="fs-2 fw-bold text-dark mb-1" data-i18n="stat_projects_num">25+</div>
-                <div class="small text-secondary fw-medium" data-i18n="stat_projects_label">Produktiv-Projekte</div>
+                <div class="stat-card-value text-dark" data-i18n="stat_projects_num">25+</div>
+                <div class="stat-card-label" data-i18n="stat_projects_label">Produktiv-Projekte</div>
               </div>
             </div>
             <div class="col-6">
               <div class="stat-card text-center">
-                <div class="fs-2 fw-bold text-danger mb-1" data-i18n="stat_exp_num">4+</div>
-                <div class="small text-secondary fw-medium" data-i18n="stat_exp_label">Jahre Full-Stack-Erfahrung</div>
+                <div class="stat-card-value text-danger" data-i18n="stat_exp_num">4+</div>
+                <div class="stat-card-label" data-i18n="stat_exp_label">Jahre Full-Stack-Erfahrung</div>
               </div>
             </div>
             <div class="col-6">
               <div class="stat-card text-center">
-                <div class="fs-3 fw-bold text-dark mb-1" data-i18n="stat_degree_num">Graduiert</div>
-                <div class="small text-secondary fw-medium" data-i18n="stat_degree_label">Informatik · FAST NUCES</div>
+                <div class="stat-card-value text-dark" data-i18n="stat_degree_num" style="font-size: 1.5rem;">Graduiert</div>
+                <div class="stat-card-label" data-i18n="stat_degree_label">Informatik · FAST NUCES</div>
               </div>
             </div>
             <div class="col-6">
               <div class="stat-card text-center">
-                <div class="fs-2 fw-bold text-danger mb-1" data-i18n="stat_quality_num">100%</div>
-                <div class="small text-secondary fw-medium" data-i18n="stat_quality_label">Zuverlässigkeit & Code-Qualität</div>
+                <div class="stat-card-value text-danger" data-i18n="stat_quality_num">100%</div>
+                <div class="stat-card-label" data-i18n="stat_quality_label">Zuverlässigkeit & Code-Qualität</div>
               </div>
             </div>
           </div>
 
           <!-- Balanced German Standards Banner -->
-          <div class="mt-3.5 p-3.5 bg-white rounded-4 border shadow-sm d-flex align-items-center gap-3">
-            <div class="icon-box-red">
+          <div class="hero-banner-card mt-3 d-flex align-items-center gap-3">
+            <div class="icon-box-red flex-shrink-0">
               <i data-lucide="shield-check" class="lucide-lg"></i>
             </div>
             <div>
@@ -197,7 +194,7 @@
   <!-- About Section -->
   <section id="about" class="py-5 bg-light border-bottom">
     <div class="container py-lg-4">
-      <div class="row gy-4 align-items-center">
+      <div class="row g-4 g-lg-5 align-items-center">
         <!-- Left: Refined Developer Card -->
         <div class="col-12 col-lg-5">
           <div class="about-profile-card">
@@ -307,94 +304,90 @@
   </section>
 
   <!-- Skills / Competencies Section -->
+  <!-- Skills & Services Section (Core Service Domains) -->
   <section id="skills" class="py-5 border-bottom">
     <div class="container py-lg-4">
       <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="skills_eyebrow">Technologie-Stack</span>
-        <h2 class="display-6 fw-bold text-dark mb-2" data-i18n="skills_heading">Kernkompetenzen & Moderne Werkzeuge</h2>
-        <p class="text-secondary" data-i18n="skills_sub">Ein erprobter Technologie-Stack für moderne, zukunftssichere und performante Webanwendungen.</p>
+        <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="skills_eyebrow">Leistungen & Kernkompetenzen</span>
+        <h2 class="display-6 fw-bold text-dark mb-2" data-i18n="skills_heading">Kernkompetenzen & Dienstleistungen</h2>
+        <p class="text-secondary" data-i18n="skills_sub">Maßgeschneiderte Softwarelösungen mit Fokus auf Skalierbarkeit, intuitive Nutzererfahrung und zukunftsfähige Architekturen.</p>
       </div>
 
-      <div class="row g-4">
-        <!-- Frontend -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="skill-card shadow-sm">
-            <div class="icon-box-red mb-3">
-              <i data-lucide="layout" class="lucide-lg"></i>
+      <div class="row g-4 justify-content-center">
+        <!-- 1. Web Development -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-card shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <div class="icon-box-red mb-3">
+                <i data-lucide="globe" class="lucide-lg"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_web">Web Development</h5>
+              <p class="small text-secondary mb-3.5" data-i18n="skills_cat_web_desc">
+                Entwicklung hochperformanter, reaktiver Webanwendungen, skalierbarer Plattformen und stabiler APIs nach Clean-Code-Standards.
+              </p>
             </div>
-            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_frontend">Frontend-Entwicklung</h5>
-            <p class="small text-secondary mb-3" data-i18n="skills_cat_frontend_desc">Moderne, responsive Benutzeroberflächen mit höchster Barrierefreiheit und flüssigen Animationen.</p>
-            <div class="d-flex flex-wrap gap-1.5">
+            <div class="d-flex flex-wrap gap-2 pt-1">
+              <span class="tech-tag">Next.js</span>
               <span class="tech-tag">React.js</span>
-              <span class="tech-tag">Vue.js</span>
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">JavaScript (ES6+)</span>
-              <span class="tech-tag">HTML5 / CSS3</span>
-              <span class="tech-tag">Bootstrap 5</span>
-              <span class="tech-tag">TailwindCSS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backend -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="skill-card shadow-sm">
-            <div class="icon-box-red mb-3">
-              <i data-lucide="server" class="lucide-lg"></i>
-            </div>
-            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_backend">Backend & Cloud</h5>
-            <p class="small text-secondary mb-3" data-i18n="skills_cat_backend_desc">Robuste Server-Architekturen, RESTful APIs, GraphQL und Cloud-Infrastrukturen.</p>
-            <div class="d-flex flex-wrap gap-1.5">
               <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Express</span>
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">Laravel</span>
-              <span class="tech-tag">Spring Boot</span>
-              <span class="tech-tag">RESTful APIs</span>
-              <span class="tech-tag">GraphQL</span>
-              <span class="tech-tag">AWS Cloud</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">NoSQL</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">REST & GraphQL APIs</span>
+              <span class="tech-tag">GitHub</span>
             </div>
           </div>
         </div>
 
-        <!-- Databases & DevOps -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="skill-card shadow-sm">
-            <div class="icon-box-red mb-3">
-              <i data-lucide="database" class="lucide-lg"></i>
+        <!-- 2. App Development -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-card shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <div class="icon-box-red mb-3">
+                <i data-lucide="smartphone" class="lucide-lg"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_app">App Development</h5>
+              <p class="small text-secondary mb-3.5" data-i18n="skills_cat_app_desc">
+                Konzeption und Realisierung nativer und plattformübergreifender Mobile Apps mit flüssigen Interfaces und Offline-Fähigkeiten.
+              </p>
             </div>
-            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_database">Datenbanken & DevOps</h5>
-            <p class="small text-secondary mb-3" data-i18n="skills_cat_database_desc">Effiziente Datenmodellierung, relationale & NoSQL-Systeme, Containerisierung und CI/CD.</p>
-            <div class="d-flex flex-wrap gap-1.5">
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">MongoDB</span>
+            <div class="d-flex flex-wrap gap-2 pt-1">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">iOS</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">React Native</span>
               <span class="tech-tag">Firebase</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Git / GitHub</span>
-              <span class="tech-tag">GitLab CI/CD</span>
-              <span class="tech-tag">Agile / Scrum</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Offline-First Sync</span>
+              <span class="tech-tag">GitHub CI/CD</span>
             </div>
           </div>
         </div>
 
-        <!-- Marketing & Optimization -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="skill-card shadow-sm">
-            <div class="icon-box-red mb-3">
-              <i data-lucide="trending-up" class="lucide-lg"></i>
+        <!-- 3. AI Automation -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-card shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <div class="icon-box-red mb-3">
+                <i data-lucide="bot" class="lucide-lg"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_ai">AI Automation</h5>
+              <p class="small text-secondary mb-3.5" data-i18n="skills_cat_ai_desc">
+                Intelligente Automatisierungsworkflows, LLM-Integrationen, generative KI-Tools und effiziente Prozessoptimierung für Unternehmen.
+              </p>
             </div>
-            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_methods">Marketing & Optimierung</h5>
-            <p class="small text-secondary mb-3" data-i18n="skills_cat_methods_desc">Technisches SEO, Performance-Tuning (Core Web Vitals), Google Analytics und Conversion-Optimierung.</p>
-            <div class="d-flex flex-wrap gap-1.5">
-              <span class="tech-tag">Technisches SEO</span>
-              <span class="tech-tag">Core Web Vitals</span>
-              <span class="tech-tag">Google Analytics</span>
-              <span class="tech-tag">Google Ads</span>
-              <span class="tech-tag">CRO</span>
-              <span class="tech-tag">WordPress CMS</span>
-              <span class="tech-tag">PageSpeed</span>
+            <div class="d-flex flex-wrap gap-2 pt-1">
+              <span class="tech-tag">Python & FastAPI</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">LLM & OpenAI APIs</span>
+              <span class="tech-tag">LangChain & RAG</span>
+              <span class="tech-tag">SQL & Vector DBs</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Workflow Automation</span>
+              <span class="tech-tag">Data Pipelines</span>
+              <span class="tech-tag">GitHub</span>
             </div>
           </div>
         </div>
@@ -435,89 +428,19 @@
       <div id="projects-grid" class="row">
         <!-- Rendered by js/main.js -->
       </div>
-    </div>
-  </section>
 
-  <!-- Experience & Education Section -->
-  <section id="experience" class="py-5 border-bottom">
-    <div class="container py-lg-4">
-      <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="exp_eyebrow">Werdegang & Ausbildung</span>
-        <h2 class="display-6 fw-bold text-dark mb-2" data-i18n="exp_heading">Beruflicher Hintergrund</h2>
-      </div>
-
-      <div class="row g-4 justify-content-center">
-        <!-- Professional Experience Column -->
-        <div class="col-12 col-lg-6">
-          <div class="card p-4 border rounded-4 shadow-sm h-100 bg-white">
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="icon-box-red">
-                <i data-lucide="briefcase" class="lucide-lg"></i>
-              </div>
-              <h4 class="fw-bold mb-0 text-dark" data-i18n="exp_title_work">Berufserfahrung</h4>
-            </div>
-
-            <div class="timeline-item">
-              <div class="d-flex justify-content-between align-items-baseline mb-1">
-                <h5 class="fw-bold text-dark mb-0" data-i18n="exp_job1_role">Freelance Full Stack Developer</h5>
-                <span class="badge bg-danger text-white rounded-pill px-3 py-1.5" data-i18n="exp_job1_period">Januar 2022 – Heute</span>
-              </div>
-              <div class="text-secondary small fw-medium mb-2" data-i18n="exp_job1_company">Freiberuflich / Projektbasis · Böblingen</div>
-              <p class="text-secondary small mb-3" style="line-height: 1.6;" data-i18n="exp_job1_desc">
-                Entwicklung und Bereitstellung maßgeschneiderter Webanwendungen, E-Commerce-Plattformen und APIs für internationale Kunden. Fokus auf Clean Architecture, API-Design, Cloud-Integration und SEO-Performance.
-              </p>
-              <div class="d-flex flex-wrap gap-1.5">
-                <span class="tech-tag">Full-Stack-Webentwicklung</span>
-                <span class="tech-tag">React & Node.js</span>
-                <span class="tech-tag">API-Engineering</span>
-                <span class="tech-tag">WordPress CMS</span>
-                <span class="tech-tag">Performance & SEO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Education Column -->
-        <div class="col-12 col-lg-6">
-          <div class="card p-4 border rounded-4 shadow-sm h-100 bg-white">
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="icon-box-dark">
-                <i data-lucide="graduation-cap" class="lucide-lg"></i>
-              </div>
-              <h4 class="fw-bold mb-0 text-dark" data-i18n="exp_title_edu">Ausbildung & Werdegang</h4>
-            </div>
-
-            <!-- University Degree -->
-            <div class="timeline-item">
-              <div class="d-flex justify-content-between align-items-baseline mb-1">
-                <h5 class="fw-bold text-dark mb-0" data-i18n="exp_edu1_title">Graduiert: Informatik (Computer Science)</h5>
-                <span class="badge bg-dark text-white rounded-pill px-3 py-1.5" data-i18n="exp_edu1_period">2012 – 2017</span>
-              </div>
-              <div class="text-secondary small fw-medium mb-2" data-i18n="exp_edu1_school">FAST NUCES School of Management Sciences</div>
-              <p class="text-secondary small mb-2" style="line-height: 1.6;" data-i18n="exp_edu1_desc">
-                Kernbereiche: Software Engineering, Datenbanksysteme, Algorithmen, Verteilte Systeme und moderne Web-Technologien.
-              </p>
-            </div>
-
-            <!-- Pre-Engineering -->
-            <div class="timeline-item">
-              <div class="d-flex justify-content-between align-items-baseline mb-1">
-                <h5 class="fw-bold text-dark mb-0" data-i18n="exp_edu2_title">Fachabitur & Abitur (Pre-Engineering)</h5>
-                <span class="badge bg-secondary-subtle text-secondary rounded-pill px-3 py-1.5" data-i18n="exp_edu2_period">2008 – 2012</span>
-              </div>
-              <div class="text-secondary small fw-medium mb-2" data-i18n="exp_edu2_school">Punjab Group of College & Govt. Comprehensive School</div>
-              <p class="text-secondary small mb-0" style="line-height: 1.6;" data-i18n="exp_edu2_desc">
-                Mathematisch-naturwissenschaftlicher Schwerpunkt mit Auszeichnung.
-              </p>
-            </div>
-          </div>
-        </div>
+      <!-- See More / Show Less Button Container -->
+      <div id="projects-see-more-container" class="text-center pt-3 d-none">
+        <button type="button" id="btn-toggle-projects" class="btn btn-outline-dark-custom px-4 py-2.5 shadow-sm fw-semibold d-inline-flex align-items-center gap-2">
+          <span id="btn-toggle-projects-text" data-i18n="project_btn_see_more">Weitere Projekte anzeigen</span>
+          <i id="btn-toggle-projects-icon" data-lucide="chevron-down" class="lucide-sm"></i>
+        </button>
       </div>
     </div>
   </section>
 
   <!-- Direct Contact Hub Section (Form Removed) -->
-  <section id="contact" class="py-5 bg-light border-bottom">
+  <section id="contact" class="py-5 border-bottom">
     <div class="container py-lg-4">
       <div class="text-center max-w-xl mx-auto mb-5">
         <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="contact_eyebrow">Kontakt & Austausch</span>
@@ -537,10 +460,10 @@
                 <i data-lucide="mail" class="lucide-lg"></i>
               </div>
               <h5 class="fw-bold text-dark mb-1" data-i18n="contact_card_email_title">E-Mail schreiben</h5>
-              <p class="small text-secondary mb-3" data-i18n="contact_card_email_desc">
+              <p class="small text-secondary mb-3" style="min-height: 42px;" data-i18n="contact_card_email_desc">
                 Für offizielle Anfragen, detaillierte Projektbeschreibungen und Angebote.
               </p>
-              <div class="p-2.5 bg-light rounded-3 text-dark fw-bold small text-break mb-4">
+              <div class="contact-value-badge">
                 contact@sadiakhan.dev
               </div>
             </div>
@@ -565,10 +488,10 @@
                 <i data-lucide="message-circle" class="lucide-lg"></i>
               </div>
               <h5 class="fw-bold text-dark mb-1" data-i18n="contact_card_whatsapp_title">WhatsApp Chat</h5>
-              <p class="small text-secondary mb-3" data-i18n="contact_card_whatsapp_desc">
+              <p class="small text-secondary mb-3" style="min-height: 42px;" data-i18n="contact_card_whatsapp_desc">
                 Schnelle und direkte Abstimmung per WhatsApp.
               </p>
-              <div class="p-2.5 bg-light rounded-3 text-dark fw-bold small mb-4">
+              <div class="contact-value-badge">
                 +49 1575 6856048
               </div>
             </div>
@@ -590,10 +513,10 @@
                 <i data-lucide="phone" class="lucide-lg"></i>
               </div>
               <h5 class="fw-bold text-dark mb-1" data-i18n="contact_card_phone_title">Telefonischer Anruf</h5>
-              <p class="small text-secondary mb-3" data-i18n="contact_card_phone_desc">
+              <p class="small text-secondary mb-3" style="min-height: 42px;" data-i18n="contact_card_phone_desc">
                 Mo–Fr von 9:00 bis 18:00 Uhr direkt erreichbar.
               </p>
-              <div class="p-2.5 bg-light rounded-3 text-dark fw-bold small mb-4">
+              <div class="contact-value-badge">
                 +49 1575 6856048
               </div>
             </div>

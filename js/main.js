@@ -18,6 +18,8 @@
   let searchQuery = '';
   let activeModalProject = null;
   let projectModalInstance = null;
+  let isProjectsExpanded = false;
+  const INITIAL_PROJECTS_COUNT = 6;
 
   // German-speaking country codes & timezones
   const GERMAN_COUNTRIES = ['DE', 'AT', 'CH', 'LI', 'LU'];
@@ -206,10 +208,17 @@
   /**
    * Render Projects Grid
    */
-  function renderProjects() {
+  function renderProjects(preserveExpandState = false) {
     const container = document.getElementById('projects-grid');
     const countEl = document.getElementById('projects-count');
+    const seeMoreContainer = document.getElementById('projects-see-more-container');
+    const toggleBtnText = document.getElementById('btn-toggle-projects-text');
+    const toggleBtnIcon = document.getElementById('btn-toggle-projects-icon');
     if (!container) return;
+
+    if (!preserveExpandState) {
+      // Keep expanded state if user is expanding, or reset when filter changes
+    }
 
     const projects = getFilteredProjects();
     const dict = (window.TRANSLATIONS && window.TRANSLATIONS[currentLang]) || (window.TRANSLATIONS && window.TRANSLATIONS.en) || {};
@@ -228,12 +237,19 @@
           </div>
         </div>
       `;
+      if (seeMoreContainer) {
+        seeMoreContainer.classList.add('d-none');
+      }
       refreshLucideIcons();
       return;
     }
 
+    // Determine how many projects to display
+    const shouldLimit = !isProjectsExpanded && projects.length > INITIAL_PROJECTS_COUNT;
+    const visibleProjects = shouldLimit ? projects.slice(0, INITIAL_PROJECTS_COUNT) : projects;
+
     let html = '';
-    projects.forEach(project => {
+    visibleProjects.forEach((project, index) => {
       const isTPM = (project.role && project.role.en && project.role.en.includes('Manager'));
       const roleBadgeClass = isTPM ? 'badge-role-tpm' : 'badge-role-dev';
       const roleText = (project.role && (project.role[currentLang] || project.role.en)) || 'Full Stack Developer';
@@ -247,8 +263,12 @@
       // Tech tags preview (first 4)
       const tagsHtml = (project.tags || []).slice(0, 4).map(t => `<span class="tech-tag">${escapeHtml(t)}</span>`).join(' ');
 
+      // Add stagger animation for newly revealed items (> INITIAL_PROJECTS_COUNT)
+      const isNewItem = index >= INITIAL_PROJECTS_COUNT;
+      const animStyle = isNewItem ? `animation-delay: ${(index - INITIAL_PROJECTS_COUNT) * 0.05}s;` : '';
+
       html += `
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4 project-item-anim" style="${animStyle}">
           <div class="card h-100 project-card shadow-sm p-4 d-flex flex-column justify-content-between">
             <div>
               <!-- Top Row: Logo & Category -->
@@ -301,6 +321,26 @@
     });
 
     container.innerHTML = html;
+
+    // Show/hide See More container
+    if (seeMoreContainer) {
+      if (projects.length > INITIAL_PROJECTS_COUNT) {
+        seeMoreContainer.classList.remove('d-none');
+        if (toggleBtnText) {
+          if (isProjectsExpanded) {
+            toggleBtnText.textContent = dict.project_btn_show_less || (currentLang === 'de' ? 'Weniger anzeigen' : 'Show Less');
+          } else {
+            const remaining = projects.length - INITIAL_PROJECTS_COUNT;
+            toggleBtnText.textContent = `${dict.project_btn_see_more || (currentLang === 'de' ? 'Weitere Projekte anzeigen' : 'See More Projects')} (${remaining}+)`;
+          }
+        }
+        if (toggleBtnIcon) {
+          toggleBtnIcon.setAttribute('data-lucide', isProjectsExpanded ? 'chevron-up' : 'chevron-down');
+        }
+      } else {
+        seeMoreContainer.classList.add('d-none');
+      }
+    }
 
     // Attach click listeners to open modal
     container.querySelectorAll('.btn-open-modal').forEach(btn => {
@@ -443,7 +483,26 @@
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
         searchQuery = (e.target.value || '').trim();
+        // Reset to initial count on new search so user isn't overwhelmed
+        isProjectsExpanded = false;
         renderProjects();
+      });
+    }
+
+    // See More / Show Less Projects Toggle Button
+    const toggleProjectsBtn = document.getElementById('btn-toggle-projects');
+    if (toggleProjectsBtn) {
+      toggleProjectsBtn.addEventListener('click', () => {
+        isProjectsExpanded = !isProjectsExpanded;
+        renderProjects(true);
+
+        if (!isProjectsExpanded) {
+          // If collapsing, scroll smoothly back to projects section top
+          const projectsSection = document.getElementById('projects');
+          if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
       });
     }
 
