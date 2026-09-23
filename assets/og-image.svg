@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1115" />
+      <stop offset="40%" stop-color="#161922" />
+      <stop offset="100%" stop-color="#0A0B0E" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#222634" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#151821" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <radialGradient id="glow" cx="10%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="90%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#goldGlow)"/>
+
+  <!-- Top German Accent Ribbon -->
+  <rect x="0" y="0" width="400" height="6" fill="#111111"/>
+  <rect x="400" y="0" width="400" height="6" fill="#D1121F"/>
+  <rect x="800" y="0" width="400" height="6" fill="#FFCC00"/>
+
+  <!-- Subtle Grid Pattern Lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="560" y1="0" x2="560" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="880" y1="0" x2="880" y2="630"/>
+    <line x1="1040" y1="0" x2="1040" y2="630"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="0" y1="340" x2="1200" y2="340"/>
+    <line x1="0" y1="460" x2="1200" y2="460"/>
+    <line x1="0" y1="580" x2="1200" y2="580"/>
+  </g>
+
+  <!-- Left Main Content Group -->
+  <g transform="translate(80, 80)">
+    
+    <!-- Top Monogram & Brand Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="52" height="52" rx="12" fill="#1E222D" stroke="#333846" stroke-width="1.5"/>
+      <text x="26" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="middle">SK</text>
+      <circle cx="42" cy="12" r="4.5" fill="#EF4444"/>
+      
+      <!-- Status Badge -->
+      <g transform="translate(70, 8)">
+        <rect width="310" height="36" rx="18" fill="#1B2721" stroke="#245239" stroke-width="1"/>
+        <circle cx="18" cy="18" r="4" fill="#10B981"/>
+        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#34D399">Verfügbar für neue Herausforderungen</text>
+      </g>
+    </g>
+
+    <!-- Name & Role -->
+    <text x="0" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="62" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">Sadia Khan</text>
+    
+    <text x="0" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#EF4444" letter-spacing="0.5">Full Stack Developer &amp; AI Engineer</text>
+
+    <!-- Description -->
+    <text x="0" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400" fill="#94A3B8" width="620">
+      <tspan x="0" dy="0">Konzeption, Entwicklung und Skalierung robuster Web- &amp; Mobile-Systeme.</tspan>
+      <tspan x="0" dy="28">Schwerpunkte: React, Node.js, Flutter, Python, AI-Workflows &amp; Cloud-DevOps.</tspan>
+    </text>
+
+    <!-- Tech Badges Pill Row -->
+    <g transform="translate(0, 320)">
+      <!-- Badge 1: React / Next.js -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="36" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="65" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38BDF8" text-anchor="middle">React &amp; Next.js</text>
+      </g>
+      <!-- Badge 2: Node.js / TS -->
+      <g transform="translate(142, 0)">
+        <rect width="145" height="36" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="72" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#4ADE80" text-anchor="middle">Node.js · TS</text>
+      </g>
+      <!-- Badge 3: Flutter / Dart -->
+      <g transform="translate(299, 0)">
+        <rect width="135" height="36" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="67" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#60A5FA" text-anchor="middle">Flutter &amp; Dart</text>
+      </g>
+      <!-- Badge 4: AI & Automation -->
+      <g transform="translate(446, 0)">
+        <rect width="170" height="36" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="85" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#FBBF24" text-anchor="middle">AI &amp; Automation</text>
+      </g>
+    </g>
+
+    <!-- Location & Domain Footer -->
+    <g transform="translate(0, 410)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#CBD5E1">📍 Böblingen · Stuttgart, Baden-Württemberg, Deutschland</text>
+      <text x="0" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#EF4444">🌐 sadiakhan.dev</text>
+    </g>
+  </g>
+
+  <!-- Right Floating Metric Showcase Cards -->
+  <g transform="translate(780, 110)">
+    
+    <!-- Metric Card 1: 20+ Projects -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="125" rx="16" fill="url(#cardGrad)" stroke="#2D3748" stroke-width="1.5"/>
+      <circle cx="45" cy="45" r="20" fill="#EF4444" fill-opacity="0.15"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#EF4444" text-anchor="middle">⚡</text>
+      <text x="80" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="900" fill="#FFFFFF">20+</text>
+      <text x="80" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#CBD5E1">Produktiv-Projekte</text>
+      <text x="80" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#64748B">SaaS, MedTech, AI &amp; Enterprise</text>
+    </g>
+
+    <!-- Metric Card 2: 4+ Years Experience -->
+    <g transform="translate(0, 145)">
+      <rect width="340" height="125" rx="16" fill="url(#cardGrad)" stroke="#2D3748" stroke-width="1.5"/>
+      <circle cx="45" cy="45" r="20" fill="#F59E0B" fill-opacity="0.15"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#F59E0B" text-anchor="middle">⭐</text>
+      <text x="80" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="900" fill="#F59E0B">4+ Jahre</text>
+      <text x="80" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#CBD5E1">Full-Stack-Erfahrung</text>
+      <text x="80" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#64748B">End-to-End Architekturen &amp; Clean Code</text>
+    </g>
+
+    <!-- Metric Card 3: Quality & Standards -->
+    <g transform="translate(0, 290)">
+      <rect width="340" height="125" rx="16" fill="url(#cardGrad)" stroke="#2D3748" stroke-width="1.5"/>
+      <circle cx="45" cy="45" r="20" fill="#3B82F6" fill-opacity="0.15"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#3B82F6" text-anchor="middle">🛡️</text>
+      <text x="80" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="900" fill="#38BDF8">100%</text>
+      <text x="80" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#CBD5E1">Engineering Excellence</text>
+      <text x="80" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#64748B">DSGVO-konform, Testing &amp; Skalierbarkeit</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,74 @@
+# Sadia Khan — Full Stack Developer & AI Engineer
+
+> Portfolio, technical expertise, and production projects overview for Sadia Khan, Senior Full Stack Developer and AI Automation Engineer based in Böblingen, Baden-Württemberg, Germany (Stuttgart Region).
+
+- **Website**: https://sadiakhan.dev/
+- **Email**: contact@sadiakhan.dev
+- **Phone / WhatsApp**: +49 1575 6856048
+- **Location**: Böblingen, Baden-Württemberg, Germany
+- **Languages**: German (fluent/professional), English (fluent/professional)
+- **Status**: Available for Full-Time Roles (Festanstellung), High-Impact Contracts & Engineering Consultancies
+
+---
+
+## Professional Summary
+
+Sadia Khan is a results-driven Full Stack Developer and AI Automation Engineer with 4+ years of professional engineering experience. She specializes in architecting, developing, and deploying resilient web applications, cross-platform mobile apps, cloud backends, and AI-powered workflow automations. 
+
+Adhering to German engineering standards—including Clean Code, scalable domain-driven architecture, robust automated testing, and strict GDPR (DSGVO) compliance—Sadia combines engineering rigor with intuitive user experiences.
+
+---
+
+## Core Technical Competencies
+
+### Frontend & Mobile
+- **Core Languages**: TypeScript, JavaScript (ES6+), Dart, HTML5, CSS3, SCSS
+- **Frameworks & Libraries**: React, Next.js, Flutter, Tailwind CSS, Bootstrap 5, Redux Toolkit, Zustand, Vue.js
+- **Mobile Development**: Native and Cross-Platform iOS & Android development using Flutter & Dart
+
+### Backend & Cloud Architecture
+- **Runtimes & Frameworks**: Node.js, Express, NestJS, Python (FastAPI, Flask, Django)
+- **Databases**: PostgreSQL, MySQL, Supabase, Firebase Firestore, MongoDB, Redis
+- **APIs & Protocols**: RESTful APIs, GraphQL, WebSockets, gRPC, OAuth2 / JWT authentication
+- **DevOps & Infrastructure**: Docker, Kubernetes, AWS (S3, EC2, Lambda), Google Cloud Platform (GCP), GitHub Actions CI/CD, Nginx
+
+### AI, Machine Learning & Automation
+- **AI Integrations**: OpenAI API, Anthropic Claude, Google Gemini / DeepMind MedGemma, LangChain, LlamaIndex
+- **Workflow Automation**: n8n, GoHighLevel (GHL), Zapier, Make.com, Custom Webhooks & ETL Pipelines
+- **Data & Intelligence**: Vector embeddings, RAG (Retrieval-Augmented Generation), Prompt Engineering, Automated Data Ingestion
+
+---
+
+## Key Production Projects (Selected Highlights)
+
+Sadia Khan has engineered and delivered 20+ production-grade software solutions across MedTech, AI, SaaS, and Enterprise domains:
+
+1. **DigiHomeo (AI & MedTech)**
+   - *Role*: Full Stack AI Engineer (Flutter, Dart, Firebase, GCP, MedGemma)
+   - *Description*: AI-powered clinical decision support system for medical and homeopathic practitioners to analyze multi-symptomatic patient cases in real-time.
+   - *Links*: https://digihomeo.com · Google Play Store
+
+2. **GynaeHub (HealthTech & Clinical Workflow)**
+   - *Role*: Full Stack Developer (React, Node.js, PostgreSQL, Docker)
+   - *Description*: Comprehensive clinical management platform for obstetrics & gynecology, supporting patient health records, appointment scheduling, and HIPAA/GDPR compliance.
+   - *Links*: https://gynaehub.com
+
+3. **Medical Research Council Platform (MRC)**
+   - *Role*: Lead Frontend Engineer (Next.js, TypeScript, Tailwind CSS)
+   - *Description*: Research repository and collaboration portal for medical investigators, enabling secure data sharing and peer review.
+
+4. **University of East Anglia Research Portal (UEAR)**
+   - *Role*: Full Stack Engineer (Python, Django, React, PostgreSQL)
+   - *Description*: Academic research repository and publication catalog for university researchers and students.
+
+*(For full interactive details on all 20 production case studies, visit https://sadiakhan.dev/#projects)*
+
+---
+
+## Contact & Hiring Information
+
+- **Direct Email**: contact@sadiakhan.dev
+- **Phone / WhatsApp**: +49 1575 6856048
+- **Online Portfolio**: https://sadiakhan.dev/
+- **GitHub**: https://github.com/sadiakhanofficial
+- **Work Authorization**: Eligible to work in Germany / European Union

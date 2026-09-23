@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sadiakhan.dev/sitemap.xml
+
+# LLM & AI Context
+# See /llms.txt for structured machine-readable knowledge about Sadia Khan's portfolio, skills, and projects
