@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sadia Khan | Full Stack Developer · Böblingen, Deutschland</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio von Sadia Khan – Erfahrene Full-Stack-Entwicklerin aus Böblingen, Deutschland. Konzeption, Entwicklung und Skalierung robuster Webanwendungen mit React, Node.js, TypeScript, Cloud & DevOps.">
+  <meta name="keywords" content="Sadia Khan, Full Stack Developer, Software Engineer, Böblingen, Stuttgart, Deutschland, React, Node.js, Python, TypeScript">
+  <meta name="author" content="Sadia Khan">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sadiakhan.dev/">
+  <meta property="og:title" content="Sadia Khan | Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer mit Fokus auf Performance, moderne Web-Architekturen und saubere Code-Struktur. Standort Böblingen, Deutschland.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1115'/><text x='50' y='64' font-family='sans-serif' font-weight='bold' font-size='44' fill='%23FFFFFF' text-anchor='middle'>SK</text><circle cx='80' cy='25' r='10' fill='%23D1121F'/></svg>">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Lucide Icons Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Light Theme CSS (German Flag Aesthetic & Bauhaus Polish) -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- Top German Flag Ribbon Micro-Accent -->
+  <div class="german-ribbon" role="presentation"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-custom py-2.5">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2.5 text-decoration-none" href="#">
+        <div class="logo-monogram">SK</div>
+        <div class="d-flex flex-column justify-content-center">
+          <span class="fw-bold fs-5 text-dark lh-1">Sadia Khan</span>
+          <span class="text-danger fw-semibold tracking-wider text-uppercase mt-1" style="font-size: 0.68rem; letter-spacing: 0.08em;" data-i18n="hero_role">Full Stack Developer</span>
+        </div>
+      </a>
+
+      <!-- Right controls on mobile: language switcher + toggle -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <div class="lang-switcher-pill">
+          <button type="button" class="lang-btn active" data-lang="de" aria-label="Deutsch">🇩🇪 DE</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-label="English">🇬🇧 EN</button>
+        </div>
+        <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i data-lucide="menu" class="text-dark lucide-lg"></i>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-i18n="nav_about">Über mich</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" data-i18n="nav_skills">Kompetenzen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" data-i18n="nav_projects">Projekte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience" data-i18n="nav_experience">Werdegang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-i18n="nav_contact">Kontakt</a>
+          </li>
+        </ul>
+
+        <!-- Desktop Controls: Language Toggle & CTA -->
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <div class="lang-switcher-pill">
+            <button type="button" class="lang-btn active" data-lang="de" title="Deutsch">🇩🇪 DE</button>
+            <button type="button" class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+          </div>
+          <a href="#contact" class="btn btn-red" data-i18n="nav_cta">
+            <i data-lucide="mail" class="lucide-sm"></i>
+            <span>Kontakt aufnehmen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section border-bottom">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-12 col-lg-7">
+          <!-- Availability & Location Badges -->
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-3.5">
+            <div class="hero-status-pill">
+              <span class="status-indicator-dot"></span>
+              <span data-i18n="hero_badge_status">Verfügbar für neue Herausforderungen</span>
+            </div>
+            <div class="hero-status-pill">
+              <i data-lucide="map-pin" class="text-danger lucide-sm"></i>
+              <span data-i18n="hero_badge_location">Böblingen, Deutschland</span>
+            </div>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="display-4 fw-extrabold mb-3 lh-sm">
+            <span class="text-secondary fs-4 d-block fw-semibold mb-1" data-i18n="hero_greeting">Hallo, ich bin</span>
+            <span class="text-dark fw-bold">Sadia Khan</span><br>
+            <span class="text-danger" data-i18n="hero_role">Full Stack Developer</span>
+          </h1>
+
+          <p class="lead text-secondary mb-4 col-xl-11" style="line-height: 1.6;" data-i18n="hero_tagline">
+            Konzeption, Entwicklung und Skalierung robuster Webanwendungen mit klarem Fokus auf Performance, saubere Code-Architektur und herausragende Benutzererfahrung.
+          </p>
+
+          <!-- CTAs -->
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <a href="#projects" class="btn btn-red btn-lg shadow-sm" data-i18n="hero_cta_projects">
+              <i data-lucide="layout" class="lucide-sm"></i>
+              <span>Projekte ansehen</span>
+            </a>
+            <a href="#contact" class="btn btn-outline-dark-custom btn-lg" data-i18n="hero_cta_contact">
+              <i data-lucide="phone" class="lucide-sm"></i>
+              <span>Direkt kontaktieren</span>
+            </a>
+          </div>
+
+          <!-- Direct contact chips with clean icon circles and healthy spacing -->
+          <div class="d-flex flex-wrap align-items-center gap-2.5 pt-1">
+            <a href="mailto:contact@sadiakhan.dev" class="contact-quick-chip">
+              <span class="chip-icon-box">
+                <i data-lucide="mail" class="lucide-sm"></i>
+              </span>
+              <span>contact@sadiakhan.dev</span>
+            </a>
+            <a href="https://wa.me/4915756856048" target="_blank" rel="noopener noreferrer" class="contact-quick-chip">
+              <span class="chip-icon-box" style="background-color: var(--whatsapp-green-subtle); color: var(--whatsapp-green);">
+                <i data-lucide="message-circle" class="lucide-sm"></i>
+              </span>
+              <span>+49 1575 6856048</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="col-12 col-lg-5">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="stat-card text-center">
+                <div class="fs-2 fw-bold text-dark mb-1" data-i18n="stat_projects_num">25+</div>
+                <div class="small text-secondary fw-medium" data-i18n="stat_projects_label">Produktiv-Projekte</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card text-center">
+                <div class="fs-2 fw-bold text-danger mb-1" data-i18n="stat_exp_num">4+</div>
+                <div class="small text-secondary fw-medium" data-i18n="stat_exp_label">Jahre Full-Stack-Erfahrung</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card text-center">
+                <div class="fs-3 fw-bold text-dark mb-1" data-i18n="stat_degree_num">Graduiert</div>
+                <div class="small text-secondary fw-medium" data-i18n="stat_degree_label">Informatik · FAST NUCES</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card text-center">
+                <div class="fs-2 fw-bold text-danger mb-1" data-i18n="stat_quality_num">100%</div>
+                <div class="small text-secondary fw-medium" data-i18n="stat_quality_label">Zuverlässigkeit & Code-Qualität</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Balanced German Standards Banner -->
+          <div class="mt-3.5 p-3.5 bg-white rounded-4 border shadow-sm d-flex align-items-center gap-3">
+            <div class="icon-box-red">
+              <i data-lucide="shield-check" class="lucide-lg"></i>
+            </div>
+            <div>
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="german-ribbon-badge"></span>
+                <h6 class="fw-bold mb-0 text-dark" data-i18n="hero_banner_title">Deutsche Ingenieursstandards</h6>
+              </div>
+              <p class="small text-secondary mb-0" data-i18n="hero_banner_desc">Clean Code, DSGVO-konform & zukunftssichere Architekturen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light border-bottom">
+    <div class="container py-lg-4">
+      <div class="row gy-4 align-items-center">
+        <!-- Left: Refined Developer Card -->
+        <div class="col-12 col-lg-5">
+          <div class="about-profile-card">
+            <!-- Header with matched monogram -->
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="logo-monogram" style="width: 52px; height: 52px; font-size: 1.25rem;">SK</div>
+              <div>
+                <h5 class="fw-bold text-dark mb-0.5">Sadia Khan</h5>
+                <span class="text-danger small fw-semibold" data-i18n="hero_role">Full Stack Developer</span>
+              </div>
+            </div>
+
+            <!-- Clean Information Rows with Lucide Icons -->
+            <div class="d-flex flex-column">
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="map-pin" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_city_label">Standort:</span>
+                </span>
+                <strong class="text-dark text-end ms-2" data-i18n="about_city_val">Böblingen, Baden-Württemberg, Deutschland</strong>
+              </div>
+
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="sparkles" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_status_label">Verfügbarkeit:</span>
+                </span>
+                <span class="badge bg-success-subtle text-success fw-semibold ms-2" data-i18n="about_status_val">Verfügbar für Festanstellung & Projekte</span>
+              </div>
+
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="mail" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_email_label">E-Mail:</span>
+                </span>
+                <a href="mailto:contact@sadiakhan.dev" class="text-danger text-decoration-none fw-semibold ms-2">contact@sadiakhan.dev</a>
+              </div>
+
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="phone" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_phone_label">Telefon:</span>
+                </span>
+                <a href="tel:+4915756856048" class="text-dark text-decoration-none fw-semibold ms-2">+49 1575 6856048</a>
+              </div>
+
+              <div class="about-info-row">
+                <span class="text-secondary d-inline-flex align-items-center gap-2">
+                  <i data-lucide="graduation-cap" class="text-muted lucide-sm"></i>
+                  <span data-i18n="about_degree_label">Abschluss:</span>
+                </span>
+                <strong class="text-dark text-end ms-2" data-i18n="about_degree_val">Graduiert (Informatik · FAST NUCES)</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio & 4 Pillar Cards -->
+        <div class="col-12 col-lg-7">
+          <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2.5" data-i18n="about_eyebrow">Profil & Philosophie</span>
+          <h2 class="h2 fw-bold text-dark mb-3" data-i18n="about_heading">Leidenschaftliche Full-Stack-Ingenieurin mit Blick fürs Ganze</h2>
+          <p class="text-secondary mb-3" style="line-height: 1.7;" data-i18n="about_p1">
+            Ich bin eine detailorientierte Full-Stack-Entwicklerin mit fundierter Praxiserfahrung in moderner Frontend- und Backend-Entwicklung. Mein Schwerpunkt liegt auf der Entwicklung und Wartung skalierbarer Webanwendungen mit agilem Vorgehen und durchdachter Softwarearchitektur.
+          </p>
+          <p class="text-secondary mb-4" style="line-height: 1.7;" data-i18n="about_p2">
+            Ob moderne reaktive Interfaces mit React, Vue oder Angular, hochperformante Microservices mit Node.js, Express, Django oder Laravel, oder relationale und NoSQL-Datenbanken: Ich verbinde technische Exzellenz mit nutzerzentriertem Design und geschäftlichem Mehrwert.
+          </p>
+
+          <!-- 4 Pillars with generous gaps & Lucide checkmark circles -->
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="pillar-card shadow-sm">
+                <div class="pillar-icon">
+                  <i data-lucide="check-circle-2" class="lucide-sm"></i>
+                </div>
+                <span class="fw-semibold text-dark small" data-i18n="about_pillar1">Agile & Scrum-Methoden</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="pillar-card shadow-sm">
+                <div class="pillar-icon">
+                  <i data-lucide="check-circle-2" class="lucide-sm"></i>
+                </div>
+                <span class="fw-semibold text-dark small" data-i18n="about_pillar2">Clean Architecture & REST/GraphQL</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="pillar-card shadow-sm">
+                <div class="pillar-icon">
+                  <i data-lucide="check-circle-2" class="lucide-sm"></i>
+                </div>
+                <span class="fw-semibold text-dark small" data-i18n="about_pillar3">Cloud & DevOps (AWS, Docker, CI/CD)</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="pillar-card shadow-sm">
+                <div class="pillar-icon">
+                  <i data-lucide="check-circle-2" class="lucide-sm"></i>
+                </div>
+                <span class="fw-semibold text-dark small" data-i18n="about_pillar4">Performance & Web-Optimierung</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills / Competencies Section -->
+  <section id="skills" class="py-5 border-bottom">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-xl mx-auto mb-5">
+        <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="skills_eyebrow">Technologie-Stack</span>
+        <h2 class="display-6 fw-bold text-dark mb-2" data-i18n="skills_heading">Kernkompetenzen & Moderne Werkzeuge</h2>
+        <p class="text-secondary" data-i18n="skills_sub">Ein erprobter Technologie-Stack für moderne, zukunftssichere und performante Webanwendungen.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Frontend -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-card shadow-sm">
+            <div class="icon-box-red mb-3">
+              <i data-lucide="layout" class="lucide-lg"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_frontend">Frontend-Entwicklung</h5>
+            <p class="small text-secondary mb-3" data-i18n="skills_cat_frontend_desc">Moderne, responsive Benutzeroberflächen mit höchster Barrierefreiheit und flüssigen Animationen.</p>
+            <div class="d-flex flex-wrap gap-1.5">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">Bootstrap 5</span>
+              <span class="tech-tag">TailwindCSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-card shadow-sm">
+            <div class="icon-box-red mb-3">
+              <i data-lucide="server" class="lucide-lg"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_backend">Backend & Cloud</h5>
+            <p class="small text-secondary mb-3" data-i18n="skills_cat_backend_desc">Robuste Server-Architekturen, RESTful APIs, GraphQL und Cloud-Infrastrukturen.</p>
+            <div class="d-flex flex-wrap gap-1.5">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">RESTful APIs</span>
+              <span class="tech-tag">GraphQL</span>
+              <span class="tech-tag">AWS Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & DevOps -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-card shadow-sm">
+            <div class="icon-box-red mb-3">
+              <i data-lucide="database" class="lucide-lg"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_database">Datenbanken & DevOps</h5>
+            <p class="small text-secondary mb-3" data-i18n="skills_cat_database_desc">Effiziente Datenmodellierung, relationale & NoSQL-Systeme, Containerisierung und CI/CD.</p>
+            <div class="d-flex flex-wrap gap-1.5">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Git / GitHub</span>
+              <span class="tech-tag">GitLab CI/CD</span>
+              <span class="tech-tag">Agile / Scrum</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketing & Optimization -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-card shadow-sm">
+            <div class="icon-box-red mb-3">
+              <i data-lucide="trending-up" class="lucide-lg"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-2" data-i18n="skills_cat_methods">Marketing & Optimierung</h5>
+            <p class="small text-secondary mb-3" data-i18n="skills_cat_methods_desc">Technisches SEO, Performance-Tuning (Core Web Vitals), Google Analytics und Conversion-Optimierung.</p>
+            <div class="d-flex flex-wrap gap-1.5">
+              <span class="tech-tag">Technisches SEO</span>
+              <span class="tech-tag">Core Web Vitals</span>
+              <span class="tech-tag">Google Analytics</span>
+              <span class="tech-tag">Google Ads</span>
+              <span class="tech-tag">CRO</span>
+              <span class="tech-tag">WordPress CMS</span>
+              <span class="tech-tag">PageSpeed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (25 Projects Showcase) -->
+  <section id="projects" class="py-5 bg-light border-bottom">
+    <div class="container py-lg-4">
+      <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between mb-4">
+        <div>
+          <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="projects_eyebrow">Portfolio & Fallstudien</span>
+          <h2 class="display-6 fw-bold text-dark mb-2">
+            <span data-i18n="projects_heading">Ausgewählte Produktiv-Projekte</span> 
+            <span id="projects-count" class="text-danger fs-4 fw-bold">(25)</span>
+          </h2>
+          <p class="text-secondary mb-lg-0" data-i18n="projects_sub">25 interaktive Architektur-Fallstudien und Anwendungen aus den Bereichen Enterprise, Healthcare, KI und Mobile.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-wrapper mt-3 mt-lg-0 w-100 w-lg-auto" style="min-width: min(100%, 300px);">
+          <i data-lucide="search" class="search-icon lucide-sm"></i>
+          <input type="text" id="projectSearchInput" class="form-control search-input" placeholder="Nach Technologie oder Name suchen..." data-i18n-placeholder="search_placeholder">
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="d-flex flex-wrap gap-2 mb-4 pb-2">
+        <button type="button" class="filter-btn active" data-category="all" data-i18n="filter_all">Alle (25)</button>
+        <button type="button" class="filter-btn" data-category="enterprise" data-i18n="filter_enterprise">Unternehmen & SaaS</button>
+        <button type="button" class="filter-btn" data-category="ai-health" data-i18n="filter_ai_health">KI & MedTech</button>
+        <button type="button" class="filter-btn" data-category="mobile-media" data-i18n="filter_mobile_media">Medien & Mobile</button>
+        <button type="button" class="filter-btn" data-category="tools-os" data-i18n="filter_tools_os">Tools & Open Source</button>
+      </div>
+
+      <!-- Dynamic Projects Grid -->
+      <div id="projects-grid" class="row">
+        <!-- Rendered by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="py-5 border-bottom">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-xl mx-auto mb-5">
+        <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="exp_eyebrow">Werdegang & Ausbildung</span>
+        <h2 class="display-6 fw-bold text-dark mb-2" data-i18n="exp_heading">Beruflicher Hintergrund</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Professional Experience Column -->
+        <div class="col-12 col-lg-6">
+          <div class="card p-4 border rounded-4 shadow-sm h-100 bg-white">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-red">
+                <i data-lucide="briefcase" class="lucide-lg"></i>
+              </div>
+              <h4 class="fw-bold mb-0 text-dark" data-i18n="exp_title_work">Berufserfahrung</h4>
+            </div>
+
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <h5 class="fw-bold text-dark mb-0" data-i18n="exp_job1_role">Freelance Full Stack Developer</h5>
+                <span class="badge bg-danger text-white rounded-pill px-3 py-1.5" data-i18n="exp_job1_period">Januar 2022 – Heute</span>
+              </div>
+              <div class="text-secondary small fw-medium mb-2" data-i18n="exp_job1_company">Freiberuflich / Projektbasis · Böblingen</div>
+              <p class="text-secondary small mb-3" style="line-height: 1.6;" data-i18n="exp_job1_desc">
+                Entwicklung und Bereitstellung maßgeschneiderter Webanwendungen, E-Commerce-Plattformen und APIs für internationale Kunden. Fokus auf Clean Architecture, API-Design, Cloud-Integration und SEO-Performance.
+              </p>
+              <div class="d-flex flex-wrap gap-1.5">
+                <span class="tech-tag">Full-Stack-Webentwicklung</span>
+                <span class="tech-tag">React & Node.js</span>
+                <span class="tech-tag">API-Engineering</span>
+                <span class="tech-tag">WordPress CMS</span>
+                <span class="tech-tag">Performance & SEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="col-12 col-lg-6">
+          <div class="card p-4 border rounded-4 shadow-sm h-100 bg-white">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-dark">
+                <i data-lucide="graduation-cap" class="lucide-lg"></i>
+              </div>
+              <h4 class="fw-bold mb-0 text-dark" data-i18n="exp_title_edu">Ausbildung & Werdegang</h4>
+            </div>
+
+            <!-- University Degree -->
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <h5 class="fw-bold text-dark mb-0" data-i18n="exp_edu1_title">Graduiert: Informatik (Computer Science)</h5>
+                <span class="badge bg-dark text-white rounded-pill px-3 py-1.5" data-i18n="exp_edu1_period">2012 – 2017</span>
+              </div>
+              <div class="text-secondary small fw-medium mb-2" data-i18n="exp_edu1_school">FAST NUCES School of Management Sciences</div>
+              <p class="text-secondary small mb-2" style="line-height: 1.6;" data-i18n="exp_edu1_desc">
+                Kernbereiche: Software Engineering, Datenbanksysteme, Algorithmen, Verteilte Systeme und moderne Web-Technologien.
+              </p>
+            </div>
+
+            <!-- Pre-Engineering -->
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <h5 class="fw-bold text-dark mb-0" data-i18n="exp_edu2_title">Fachabitur & Abitur (Pre-Engineering)</h5>
+                <span class="badge bg-secondary-subtle text-secondary rounded-pill px-3 py-1.5" data-i18n="exp_edu2_period">2008 – 2012</span>
+              </div>
+              <div class="text-secondary small fw-medium mb-2" data-i18n="exp_edu2_school">Punjab Group of College & Govt. Comprehensive School</div>
+              <p class="text-secondary small mb-0" style="line-height: 1.6;" data-i18n="exp_edu2_desc">
+                Mathematisch-naturwissenschaftlicher Schwerpunkt mit Auszeichnung.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Contact Hub Section (Form Removed) -->
+  <section id="contact" class="py-5 bg-light border-bottom">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-xl mx-auto mb-5">
+        <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1.5 rounded-pill mb-2" data-i18n="contact_eyebrow">Kontakt & Austausch</span>
+        <h2 class="display-6 fw-bold text-dark mb-3" data-i18n="contact_heading">Direkt und unkompliziert Kontakt aufnehmen</h2>
+        <p class="text-secondary col-lg-10 mx-auto" data-i18n="contact_sub">
+          Ob Festanstellung, anspruchsvolles Projekt oder technischer Austausch: Ich bin jederzeit über E-Mail, WhatsApp oder Telefon erreichbar.
+        </p>
+      </div>
+
+      <!-- 3 Direct Contact Cards Grid -->
+      <div class="row g-4 mb-4">
+        <!-- 1. Email Card -->
+        <div class="col-12 col-md-4">
+          <div class="contact-hub-card card-email">
+            <div>
+              <div class="icon-box-red mb-3">
+                <i data-lucide="mail" class="lucide-lg"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-1" data-i18n="contact_card_email_title">E-Mail schreiben</h5>
+              <p class="small text-secondary mb-3" data-i18n="contact_card_email_desc">
+                Für offizielle Anfragen, detaillierte Projektbeschreibungen und Angebote.
+              </p>
+              <div class="p-2.5 bg-light rounded-3 text-dark fw-bold small text-break mb-4">
+                contact@sadiakhan.dev
+              </div>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a href="mailto:contact@sadiakhan.dev" class="btn btn-red w-100 py-2">
+                <i data-lucide="mail" class="lucide-sm"></i>
+                <span data-i18n="contact_card_email_action">E-Mail senden</span>
+              </a>
+              <button type="button" class="btn btn-outline-secondary btn-copy px-3" data-copy="contact@sadiakhan.dev" title="E-Mail kopieren">
+                <i data-lucide="copy" class="lucide-sm"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. WhatsApp Card -->
+        <div class="col-12 col-md-4">
+          <div class="contact-hub-card card-whatsapp">
+            <div>
+              <div class="icon-box-green mb-3">
+                <i data-lucide="message-circle" class="lucide-lg"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-1" data-i18n="contact_card_whatsapp_title">WhatsApp Chat</h5>
+              <p class="small text-secondary mb-3" data-i18n="contact_card_whatsapp_desc">
+                Schnelle und direkte Abstimmung per WhatsApp.
+              </p>
+              <div class="p-2.5 bg-light rounded-3 text-dark fw-bold small mb-4">
+                +49 1575 6856048
+              </div>
+            </div>
+
+            <div>
+              <a href="https://wa.me/4915756856048" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100 py-2">
+                <i data-lucide="message-circle" class="lucide-sm"></i>
+                <span data-i18n="contact_card_whatsapp_action">WhatsApp Chat starten</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Phone Call Card -->
+        <div class="col-12 col-md-4">
+          <div class="contact-hub-card card-phone">
+            <div>
+              <div class="icon-box-dark mb-3">
+                <i data-lucide="phone" class="lucide-lg"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-1" data-i18n="contact_card_phone_title">Telefonischer Anruf</h5>
+              <p class="small text-secondary mb-3" data-i18n="contact_card_phone_desc">
+                Mo–Fr von 9:00 bis 18:00 Uhr direkt erreichbar.
+              </p>
+              <div class="p-2.5 bg-light rounded-3 text-dark fw-bold small mb-4">
+                +49 1575 6856048
+              </div>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a href="tel:+4915756856048" class="btn btn-outline-dark-custom w-100 py-2">
+                <i data-lucide="phone" class="lucide-sm"></i>
+                <span data-i18n="contact_card_phone_action">Jetzt anrufen</span>
+              </a>
+              <button type="button" class="btn btn-outline-secondary btn-copy px-3" data-copy="+4915756856048" title="Nummer kopieren">
+                <i data-lucide="copy" class="lucide-sm"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location & Availability Banner -->
+      <div class="p-4 bg-white rounded-4 border shadow-sm d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 text-center text-md-start">
+        <div class="d-flex align-items-center gap-3">
+          <div class="icon-box-dark">
+            <i data-lucide="map-pin" class="lucide-lg text-danger"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-0.5 text-dark" data-i18n="contact_location_title">Standort</h6>
+            <div class="text-secondary small fw-medium" data-i18n="contact_location_val">71034 Böblingen, Baden-Württemberg, Deutschland</div>
+          </div>
+        </div>
+
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1.5 bg-light rounded-pill border small text-muted">
+          <span class="status-indicator-dot"></span>
+          <span data-i18n="contact_location_extra">Region Stuttgart · Deutschlandweit remote & hybrid</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-white">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-1">
+            <div class="logo-monogram" style="width: 28px; height: 28px; font-size: 0.8rem;">SK</div>
+            <span class="fw-bold text-dark">Sadia Khan</span>
+            <span class="text-muted small">•</span>
+            <span class="text-secondary small" data-i18n="hero_role">Full Stack Developer</span>
+          </div>
+          <p class="text-muted small mb-0" data-i18n="footer_german_touch">Mit Präzision entwickelt in Böblingen, Deutschland 🇩🇪</p>
+        </div>
+
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <button type="button" class="btn btn-link text-secondary text-decoration-none small p-0 me-3" data-bs-toggle="modal" data-bs-target="#impressumModal" data-i18n="footer_impressum_btn">
+            Impressum & Datenschutz
+          </button>
+          <span class="text-muted small">© 2026 Sadia Khan. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center gap-3">
+          <div class="project-logo-box" style="width: 48px; height: 48px;">
+            <img id="modalProjectLogo" src="assets/logos/projects/cmd.svg" alt="Project Logo">
+          </div>
+          <div class="flex-grow-1">
+            <h5 class="modal-title fw-bold text-dark mb-0" id="modalProjectTitle">Project Title</h5>
+            <div class="d-flex align-items-center gap-2 mt-1">
+              <span id="modalProjectCategory" class="badge bg-light text-secondary border small">Category</span>
+              <span id="modalProjectRole" class="badge badge-role">Role</span>
+              <span id="modalProjectTimeline" class="text-muted small">Timeline</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          <!-- Problem / Challenge -->
+          <div class="mb-4">
+            <h6 id="modalProblemHeading" class="fw-bold text-dark mb-2 d-flex align-items-center">
+              <i data-lucide="alert-triangle" class="text-danger me-2"></i>
+              <span>Herausforderung & Problemstellung</span>
+            </h6>
+            <div id="modalProblemText" class="p-3 bg-light rounded-3 text-secondary small" style="line-height: 1.6;"></div>
+          </div>
+
+          <!-- Solution / Architecture -->
+          <div class="mb-4">
+            <h6 id="modalSolutionHeading" class="fw-bold text-dark mb-2 d-flex align-items-center">
+              <i data-lucide="cpu" class="text-danger me-2"></i>
+              <span>Architektur & Technische Umsetzung</span>
+            </h6>
+            <div id="modalSolutionText" class="p-3 bg-light rounded-3 text-secondary small" style="line-height: 1.6;"></div>
+          </div>
+
+          <!-- Technologies -->
+          <div class="mb-4">
+            <h6 class="fw-bold text-dark mb-2 d-flex align-items-center" data-i18n="project_modal_stack">
+              <i data-lucide="layers" class="text-danger me-2"></i>
+              <span>Technologie-Stack</span>
+            </h6>
+            <div id="modalProjectTags" class="d-flex flex-wrap gap-2"></div>
+          </div>
+
+          <!-- Direct Links -->
+          <div>
+            <h6 class="fw-bold text-dark mb-2 d-flex align-items-center" data-i18n="project_modal_links">
+              <i data-lucide="external-link" class="text-danger me-2"></i>
+              <span>Projekt-Links</span>
+            </h6>
+            <div id="modalProjectLinks" class="d-flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm px-4" data-bs-dismiss="modal" data-i18n="project_modal_close">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impressum & Datenschutz Modal -->
+  <div class="modal fade" id="impressumModal" tabindex="-1" aria-labelledby="impressumModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold text-dark" id="impressumModalLabel" data-i18n="impressum_title">Impressum & Datenschutzhinweis</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body p-4" data-i18n-html="impressum_content">
+          <!-- Populated from js/translations.js -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" data-i18n="project_modal_close">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Copy -->
+  <div id="copyToast" class="copy-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    In die Zwischenablage kopiert!
+  </div>
+
+  <!-- Bootstrap 5.3 Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Project Data & Translations -->
+  <script src="data/projects.js"></script>
+  <script src="js/translations.js"></script>
+
+  <!-- Main Application Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
