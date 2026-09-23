@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F232E"/>
+      <stop offset="100%" stop-color="#0B0D12"/>
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with subtle border -->
+  <rect width="180" height="180" rx="40" fill="url(#iconBg)"/>
+  <rect x="1.5" y="1.5" width="177" height="177" rx="38.5" fill="none" stroke="#333846" stroke-width="3" stroke-opacity="0.6"/>
+  
+  <!-- Subtle German Flag Accent Strip at top -->
+  <path d="M 40 0 L 60 0 A 40 40 0 0 0 0 40 L 0 60" fill="none"/>
+  <rect x="45" y="12" width="30" height="4" rx="2" fill="#111111"/>
+  <rect x="75" y="12" width="30" height="4" rx="2" fill="#D1121F"/>
+  <rect x="105" y="12" width="30" height="4" rx="2" fill="#FFCC00"/>
+
+  <!-- SK Monogram -->
+  <text x="86" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="76" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1.5">SK</text>
+  
+  <!-- Red accent badge dot -->
+  <circle cx="138" cy="54" r="12" fill="url(#redAccent)"/>
+</svg>
